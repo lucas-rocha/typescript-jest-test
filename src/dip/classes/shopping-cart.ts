@@ -25,7 +25,7 @@ export class ShoppingCart implements ShoppingCartProtocol {
   }
 
   removeItem(index: number): void {
-    this._items.slice(index, 1);
+    this._items.splice(index, 1);
   }
 
   get items(): Readonly<CartItem[]> {
